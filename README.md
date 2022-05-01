@@ -2,6 +2,8 @@
 
 This litte app shows you all logins in a .1pux file. You can print the page, if you want an analog backup of your vaults.
 
+This is a private project and not affiliated with 1password!
+
 
 ## Developing
 
