@@ -4,7 +4,7 @@
     export let sectionFields: SectionFields[];
 </script>
 
-<div>
+<div style="overflow-wrap: break-word;">
     {#each sectionFields as sectionField(sectionField.id)}
         {sectionField.title}:
         {#if sectionField.value.string }

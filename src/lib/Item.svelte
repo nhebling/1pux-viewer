@@ -7,8 +7,8 @@
 
 <div class="column is-one-third" style="break-inside: avoid">
     <article class="box">
-        <div class="content">
-            <h5 class="title is-5">{item.overview.title}</h5>
+        <div class="content" style="overflow-wrap: break-word;">
+            <h6 class="title is-6">{item.overview.title}</h6>
             <hr>
             <b>Username:</b> {item.details.loginFields.find((field) => field.designation === 'username')?.value}<br/>
             <b>Password:</b> {item.details.loginFields.find((field) => field.designation === 'password')?.value}<br/>

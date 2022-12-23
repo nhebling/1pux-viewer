@@ -45,7 +45,7 @@
 
     <hr class="my-4 hide-print" />
 
-    <section class="container">
+    <section class="container is-fluid">
         {#if data}
             {#await data}
                 Lädt...

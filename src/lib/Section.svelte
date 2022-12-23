@@ -5,7 +5,7 @@
     export let sectionItem: ItemDetailsSection[];
 </script>
 
-<div>
+<div style="overflow-wrap: break-word;">
     {#each sectionItem as sectionItem(sectionItem.name)}
         {#if sectionItem.fields.length > 0}
             <b><i>Section: {sectionItem.title}</i></b><br/>
