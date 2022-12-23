@@ -5,7 +5,7 @@
     export let item: Item;
 </script>
 
-<div class="column is-one-third">
+<div class="column is-one-third" style="break-inside: avoid">
     <article class="box">
         <div class="content">
             <h5 class="title is-5">{item.overview.title}</h5>

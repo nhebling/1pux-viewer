@@ -4,7 +4,7 @@
     export let sectionFields: SectionFields[];
 </script>
 
-<div class="mb-2">
+<div>
     {#each sectionFields as sectionField(sectionField.id)}
         {sectionField.title}:
         {#if sectionField.value.string }

@@ -5,7 +5,7 @@
     export let sectionItem: ItemDetailsSection[];
 </script>
 
-<div class="mb-2">
+<div>
     {#each sectionItem as sectionItem(sectionItem.name)}
         {#if sectionItem.fields.length > 0}
             <b><i>Section: {sectionItem.title}</i></b><br/>
