@@ -47,7 +47,29 @@ export interface ItemDetails {
         value: string;
         id: string;
         name: string;
-        fieldType: string;
+        fieldType: ItemDetailsFieldType;
         designation: string;
     }[];
+    notesPlain: string;
+    sections: ItemDetailsSection[];
+}
+export interface ItemDetailsSection {
+    title: string;
+    name: string;
+    fields: SectionFields[];
+}
+export interface SectionFields {
+    title: string;
+    id: string;
+    value: any;
+}
+
+export enum ItemDetailsFieldType {
+    T = 'text',
+    E = 'email',
+    U = 'url',
+    N = 'number',
+    P = 'password',
+    A = 'textarea',
+    TEL = 'phone number',
 }

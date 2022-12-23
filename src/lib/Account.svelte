@@ -5,12 +5,9 @@
     export let account: Account;
 </script>
 
-<span>{account.attrs.accountName}</span>
-
-<ul class="menu-list">
+<div>
+    <h5 class="title is-5">Account: {account.attrs.accountName}</h5><br/>
     {#each account.vaults as vault (vault.attrs.uuid)}
-        <li>
-            <Vault {vault} />
-        </li>
+        <Vault {vault} />
     {/each}
-</ul>
+</div>

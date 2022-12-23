@@ -6,14 +6,9 @@
     $: items = vault.items.filter((item) => item.categoryUuid === '001');
 </script>
 
-<span>
-    {vault.attrs.name}
-</span>
-
-<ul class="menu-list">
+<h5 class="title is-5">Vault: {vault.attrs.name}</h5><br/>
+<div class="columns is-multiline is-mobile">
     {#each items as item (item.uuid)}
-        <li>
-            <Item {item} />
-        </li>
+        <Item {item} />
     {/each}
-</ul>
+</div>
